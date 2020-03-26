@@ -1,7 +1,9 @@
 package com.example.firebaseproject;
 
-public class Estudiante {
-    private String nombres;
+import java.io.Serializable;
+
+public class Estudiante implements Serializable {
+    private String nombre;
     private String apellido;
     private String edad;
     private String celular;
@@ -9,12 +11,12 @@ public class Estudiante {
     private String cedula;
     private String universidad;
 
-    public String getNombres() {
-        return nombres;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombres(String nombres) {
-        this.nombres = nombres;
+    public void setNombres(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApellido() {
